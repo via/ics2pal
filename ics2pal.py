@@ -28,7 +28,7 @@ if __name__ == "__main__":
       if organizer.startswith("MAILTO:"):
         organizer = organizer[7:]
 
-      paltime = stdate.strftime("%Y%d%m")
+      paltime = stdate.strftime("%Y%m%d")
 
       palline = "%s    %s (from %s)" % (paltime, summary, organizer)
 

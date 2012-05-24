@@ -1,0 +1,9 @@
+ics2pal.py -- Convert email containing ICS attachment to text suitable
+for pal
+
+Pass in a message contents, and a PAL line (actually multiple if there
+are multiple invites) will be sent to stdout.
+
+Add this to your .muttrc to use:
+ macro index \cw |/home/via/dev/ics2pal/ics2pal.py>>/home/via/.pal/work.pal\n 'Add line to pal'
+ macro pager \cw |/home/via/dev/ics2pal/ics2pal.py>>/home/via/.pal/work.pal\n 'Add line to pal'
