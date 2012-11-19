@@ -18,7 +18,7 @@ if __name__ == "__main__":
     print "Not a multipart MIME message!"
 
   for part in msg.get_payload():
-    if part.get_content_type() == "application/ics":
+    if part.get_content_type() == "application/ics" or part.get_content_type() == "text/calendar":
       event = part.get_payload(decode=True)
       cal = vobject.readOne(event)
 
